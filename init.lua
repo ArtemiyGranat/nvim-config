@@ -1,12 +1,13 @@
-require("artemii.plugins-setup")
-require("artemii.core.options")
-require("artemii.core.colorscheme")
-require("artemii.core.keymaps")
-require("artemii.plugins.nvim-tree")
-require("artemii.plugins.comment")
-require("artemii.plugins.lualine")
-require("artemii.plugins.nvim-cmp")
-require("artemii.plugins.lsp.lspconfig")
+require("plugins-setup")
+require("core.options")
+require("core.colorscheme")
+require("core.keymaps")
+require("plugins.nvim-tree")
+require("plugins.comment")
+require("plugins.lualine")
+require("plugins.nvim-cmp")
+require("plugins.nvim-autopairs")
+require("plugins.lsp.lspconfig")
 
 -- lsp servers
 require'lspconfig'.clangd.setup{}

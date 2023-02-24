@@ -12,6 +12,9 @@ opt.expandtab = true
 opt.autoindent = true
 opt.backspace = "indent,eol,start"
 
+-- line wrap
+opt.wrap = false
+
 -- search settings
 opt.ignorecase = true
 opt.smartcase = true
@@ -22,6 +25,7 @@ opt.background = "dark"
 opt.signcolumn = "yes" -- show sign column so that text doesn't shift
 vim.cmd "set noshowmode"
 vim.cmd "set noshowcmd"
+
 -- clipboard
 opt.clipboard:append("unnamedplus")
 

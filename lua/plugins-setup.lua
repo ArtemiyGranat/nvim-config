@@ -26,12 +26,17 @@ if not status then
   return
 end
 
--- add list of plugins to install
+-- list of plugins to install
 return packer.startup(function(use)
     -- packer can manage itself
     use("wbthomason/packer.nvim")
-    use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
-    use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
+    -- lua functions that many plugins use
+    use("nvim-lua/plenary.nvim")
+    -- preferred colorscheme
+    use("bluz71/vim-nightfly-guicolors") 
+    use("rebelot/kanagawa.nvim")
+    use("EdenEast/nightfox.nvim") 
+    -- comment lines on gc
     use("numToStr/Comment.nvim")
     -- file explorer
     use("nvim-tree/nvim-tree.lua")
@@ -47,7 +52,8 @@ return packer.startup(function(use)
     use("hrsh7th/cmp-buffer")
     use("hrsh7th/cmp-path")
     use("hrsh7th/cmp-cmdline")
-
+    -- brackets etc
+    use("windwp/nvim-autopairs")
 
     if packer_bootstrap then
       require("packer").sync()

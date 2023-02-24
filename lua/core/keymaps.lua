@@ -12,7 +12,8 @@ keymap.set("n", "<C-k>", ":m .-2<CR>==")
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
 keymap.set("n", "<leader>f", ":NvimTreeFocus<CR>")
 -- toggleterm
-keymap.set("n", "<leader>t", ":ToggleTerm<CR>")
+-- <Leader>t - toggle terminal
+
 -- INSERT --
 
 -- move line or block like alt+arrow-up or alt+arrow-down

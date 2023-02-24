@@ -56,7 +56,10 @@ return packer.startup(function(use)
     use("windwp/nvim-autopairs")
     -- terminal in vim
     use("akinsho/toggleterm.nvim")
-
+    -- multiple cursors
+    use("mg979/vim-visual-multi")
+    -- autosave
+    use("907th/vim-auto-save")
     if packer_bootstrap then
       require("packer").sync()
     end

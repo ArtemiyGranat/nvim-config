@@ -1,5 +1,8 @@
 local opt = vim.opt
 
+-- -- autosave
+vim.g.auto_save = 1
+
 -- line numbering
 opt.relativenumber = true
 opt.number = true

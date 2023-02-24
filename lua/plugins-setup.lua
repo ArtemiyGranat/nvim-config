@@ -54,6 +54,8 @@ return packer.startup(function(use)
     use("hrsh7th/cmp-cmdline")
     -- brackets etc
     use("windwp/nvim-autopairs")
+    -- terminal in vim
+    use("akinsho/toggleterm.nvim")
 
     if packer_bootstrap then
       require("packer").sync()

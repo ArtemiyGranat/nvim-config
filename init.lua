@@ -7,6 +7,7 @@ require("plugins.comment")
 require("plugins.lualine")
 require("plugins.nvim-cmp")
 require("plugins.nvim-autopairs")
+require("plugins.toggleterm")
 require("plugins.lsp.lspconfig")
 
 -- lsp servers
